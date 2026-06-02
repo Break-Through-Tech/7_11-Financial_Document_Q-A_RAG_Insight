@@ -16,47 +16,39 @@
 >
 > ❌ Remember that this is a public repo. Do NOT include: Proprietary data, PII, API keys, credentials, or anything confidential.
 
----
+----
 
-### 🔍 SME Feedback from the Break Through Tech Evaluation Team
+# Extracting Insight from Financial Documents Using RAG
 
-*Challenge Advisor: Please address the following feedback by editing this page. Your AI Studio Coach can help make project adjustments as needed, too. In addition to the grey section above, this section should be removed before sharing the repo with your student team.*
-
----
-
-# [Project Title]
-
-**Company / Org:** [Company / Org Name]  
-**Challenge Advisor:** [Name, Title, Email]  
+**Company / Org:** 7-11  
+**Challenge Advisor:** SaiSandeep Kantareddy, saisandeep.kantareddy@gmail.com  
 **Program:** Break Through Tech AI Studio - Fall 2026
 
----
+----
 
-## 🏢 About [Company / Org Name]
+## 🏢 About 7-11
 
-[2-3 sentences about your company: what you do, your industry, etc. You may also choose to specify your specific department or team.]
+7-11 is a leading convenience store chain specializing in providing a wide variety of food, beverages, and daily essentials. Our focus is on enhancing customer experience while efficiently managing our retail operations.
 
----
+----
 
 ## 🎯 The Challenge
 
 ### Project Summary
-[In 2-3 sentences, describe what you're asking the team to do. Be specific about the type of data, ML techniques, and potential impact.]
-
-> **Example:** "In this project, your team will use customer transaction data and classification algorithms to build a model that predicts which users are likely to churn. This will help our retention team prioritize outreach."
+The project involves using public financial documents (SEC filings, earnings call transcripts) to build a RAG-based system that answers financial questions with grounded citations. This addresses the challenge of extracting reliable insights from long, unstructured documents.
 
 ### Success Criteria
-[What does success look like? Describe evaluation metrics (accuracy, F1 score, etc.) or qualitative outcomes that would make this project valuable to your company.]
+Retrieval and answer quality metrics (top-k retrieval accuracy, answer relevance, citation correctness, groundedness/faithfulness), performance improvement over baseline retrieval approach.
 
 ### Project Milestones
 
 Use these milestones to guide your work. Your team will create a **GitHub Projects board** to track tasks within each milestone.
 
-| Month | Milestone | Key Activities |
-|-------|-----------|----------------|
-| **September** | [e.g., Data Understanding] | [e.g., Explore dataset, handle missing values, document findings] |
-| **October** | [e.g., Model Development] | [e.g., Train baseline model, experiment with approaches, iterate] |
-| **November** | [e.g., Evaluation & Presentation] | [e.g., Finalize model, prepare presentation, document results] |
+| Month       | Milestone                   | Key Activities                                               |
+|-------------|-----------------------------|-------------------------------------------------------------|
+| **September**   | Data Understanding          | Explore dataset, handle missing values, document findings    |
+| **October**     | Model Development             | Train baseline model, experiment with approaches, iterate    |
+| **November**    | Evaluation & Presentation     | Finalize model, prepare presentation, document results       |
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
@@ -64,27 +56,33 @@ Use these milestones to guide your work. Your team will create a **GitHub Projec
 
 ## 📊 Dataset
 
-**Name and Source:** [Dataset name and where it's from]  
-**Format:** [e.g., CSV, JSON, images]  
-**Size:** [Approximate size in MB/GB]  
+**Name and Source:** Public financial documents (SEC filings and earnings call transcripts) from SEC EDGAR and FinanceBench dataset  
+**Format:** Text and JSON  
+**Size:** under 1gb  
 **Location:** [Link to dataset or instructions for accessing it]
 
 ### Key Details
-- [Brief description of what's in the data]
-- [Any known limitations or preprocessing needed]
+- Public financial documents (SEC filings and earnings call transcripts) from SEC EDGAR and FinanceBench dataset. Formats include Text and JSON.
+- No known limitations; the dataset requires minimal preprocessing.
 - [Link to data dictionary or documentation, if available]
 
 ---
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** [e.g., Classification, Regression, NLP, Computer Vision, LLM/RAG]
+**ML Problem Type:** NLP
 
 **Recommended Libraries:**
-- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
+- Retrieval-Augmented Generation (RAG)
+- Semantic search
+- Reranking
+- Automated evaluation techniques
+- Natural Language Processing (NLP)
+- Large Language Models (LLMs)
+- Transfer Learning
 
 **Evaluation Metrics:**
-- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+- Accuracy, Precision/Recall, BLEU score
 
 ---
 
@@ -93,16 +91,16 @@ Use these milestones to guide your work. Your team will create a **GitHub Projec
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
-- [e.g., Link to an article or blog post about the problem domain]
-- [e.g., Link to an industry report or case study]
+- [Link to an article or blog post about the problem domain]
+- [Link to an industry report or case study]
 
 **Technical Tutorials:**
-- [e.g., Link to a free tutorial on the ML technique(s) involved]
-- [e.g., Link to documentation for a key library or tool]
+- [Link to a free tutorial on the ML technique(s) involved]
+- [Link to documentation for a key library or tool]
 
 **Code Examples:**
-- [e.g., Link to a relevant GitHub repo]
-- [e.g., Link to a sample implementation or starter code]
+- [Link to a relevant GitHub repo]
+- [Link to a sample implementation or starter code]
 
 **Other:**
 - [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
@@ -114,13 +112,13 @@ The following resources will help your team understand the problem space and pot
 ## 🤝 How We'll Work Together
 
 **Check-ins:** During our biweekly 60-min AI Studio Lab Section meeting block (2nd and 4th week of every month)  
-**Communication:** [e.g., Slack (Break Through Tech workspace) or email]  
-**Response time:** [e.g., Within 48 hours on weekdays]  
+**Communication:** Slack (Break Through Tech workspace) or email  
+**Response time:** Within 48 hours on weekdays  
 
 **Recommended Tools:**
-- **Coding:** [e.g., Google Colab, VS Code]
-- **Collaboration:** [e.g., GitHub, Notion]
-- **Virtual Meetings:** [e.g., Zoom, Google Meet]
+- **Coding:** Google Colab, VS Code
+- **Collaboration:** GitHub, Notion
+- **Virtual Meetings:** Zoom, Google Meet
 
 ---
 
@@ -130,10 +128,30 @@ The following resources will help your team understand the problem space and pot
 2. **Begin reviewing the dataset** using the link above
 3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
-I’m excited to work with you!
+I'm excited to work with you!
 
 ---
 
 ## ❓ Questions?
 
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session B). 
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
+
+---
+
+## 📋 BTT Internal Evaluation Notes
+*(This section is for BTT staff only — remove before sharing with students)*
+
+| Check                       | Status | Notes |
+|-----------------------------|--------|-------|
+| Python Compatibility         | GREEN  | The tech stack focuses on Python-compatible tools and libraries for NLP and RAG, ensuring compatibility for the students' skill set. |
+| Data Readiness               | GREEN  | The public financial documents are accessible and under 1GB, positioning them as readily usable with minimal preparation required. This aligns with the accessibility requirement for students. |
+| Resource Check               | GREEN  | The project utilizes free-tier tools like Google Colab, which ensures all students have access to the necessary resources without specialized hardware or software constraints. |
+
+**Student Fit Score:** 8/10  
+**Technical Depth Score:** 7/10  
+**Overall Recommendation:** REVISE
+
+**Advisor Feedback Draft:**
+The proposal makes excellent use of existing public data, ensuring it taps into a real-world scenario. However, a clearer definition of the evaluation process is needed to ensure that the model's performance can be quantitatively assessed against industry benchmarks. Additionally, providing explicit examples of the types of financial questions the system is expected to handle would enhance clarity. I recommend focusing on these aspects as critical adjustments to bolster the project’s robustness.
+
+---
