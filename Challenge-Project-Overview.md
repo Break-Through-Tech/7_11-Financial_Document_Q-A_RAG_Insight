@@ -16,7 +16,23 @@
 >
 > ❌ Remember that this is a public repo. Do NOT include: Proprietary data, PII, API keys, credentials, or anything confidential.
 
-----
+---
+## 📋 BTT Internal Evaluation Notes
+
+| Check                       | Status | Notes |
+|-----------------------------|--------|-------|
+| Python Compatibility         | 🟢  | The tech stack focuses on Python-compatible tools and libraries for NLP and RAG, ensuring alignment with students' skill sets. |
+| Data Readiness               | 🟢  | The public financial documents are accessible and under 1GB, making them readily usable with minimal preparation. This aligns with the accessibility requirement for students. |
+| Resource Check               | 🟢  | The project uses free-tier tools such as Google Colab, ensuring all students have access to the necessary resources without specialized hardware or software constraints. |
+
+**Student Fit Score:** 8/10  
+**Technical Depth Score:** 7/10  
+**Overall Recommendation:** REVISE
+
+**Advisor Feedback Draft:**
+The proposal makes excellent use of existing public data, ensuring it taps into a real-world scenario. However, a clearer definition of the evaluation process is needed to ensure that the model's performance can be quantitatively assessed against industry benchmarks. Additionally, providing explicit examples of the types of financial questions the system is expected to handle would enhance clarity. I recommend focusing on these aspects as critical adjustments to bolster the project’s robustness.
+
+---
 
 # Extracting Insight from Financial Documents Using RAG
 
@@ -135,23 +151,3 @@ I'm excited to work with you!
 ## ❓ Questions?
 
 Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
-
----
-
-## 📋 BTT Internal Evaluation Notes
-*(This section is for BTT staff only — remove before sharing with students)*
-
-| Check                       | Status | Notes |
-|-----------------------------|--------|-------|
-| Python Compatibility         | GREEN  | The tech stack focuses on Python-compatible tools and libraries for NLP and RAG, ensuring compatibility for the students' skill set. |
-| Data Readiness               | GREEN  | The public financial documents are accessible and under 1GB, positioning them as readily usable with minimal preparation required. This aligns with the accessibility requirement for students. |
-| Resource Check               | GREEN  | The project utilizes free-tier tools like Google Colab, which ensures all students have access to the necessary resources without specialized hardware or software constraints. |
-
-**Student Fit Score:** 8/10  
-**Technical Depth Score:** 7/10  
-**Overall Recommendation:** REVISE
-
-**Advisor Feedback Draft:**
-The proposal makes excellent use of existing public data, ensuring it taps into a real-world scenario. However, a clearer definition of the evaluation process is needed to ensure that the model's performance can be quantitatively assessed against industry benchmarks. Additionally, providing explicit examples of the types of financial questions the system is expected to handle would enhance clarity. I recommend focusing on these aspects as critical adjustments to bolster the project’s robustness.
-
----
